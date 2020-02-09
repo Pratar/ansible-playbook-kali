@@ -19,20 +19,7 @@ gnome_settings:
   - "org.gnome.desktop.session idle-delay 1800"
   - "org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'"
   - "org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing'"
-## Dash-to-dock extension
-  - "org.gnome.shell.extensions.dash-to-dock apply-custom-theme false"
-  - "org.gnome.shell.extensions.dash-to-dock background-color '#0A1820'"
-  - "org.gnome.shell.extensions.dash-to-dock background-opacity 1.0"
-  - "org.gnome.shell.extensions.dash-to-dock click-action 'previews'"
-  - "org.gnome.shell.extensions.dash-to-dock custom-background-color true"
-  - "org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 40"
-  - "org.gnome.shell.extensions.dash-to-dock dock-fixed true"
-  - "org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'"
-  - "org.gnome.shell.extensions.dash-to-dock extend-height true"
-  - "org.gnome.shell.extensions.dash-to-dock force-straight-corner true"
-  - "org.gnome.shell.extensions.dash-to-dock running-indicator-style 'DOTS'"
-  - "org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'"
-  - "org.gnome.shell.extensions.dash-to-dock transparency-mode 'FIXED'"
+
 ## Favourite Apps
   - "org.gnome.shell favorite-apps \"['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'hacker-firefox-esr.desktop', 'chromium.desktop', 'burp-suite.desktop', 'code.desktop', 'SciTE.desktop', 'org.keepassxc.KeePassXC.desktop' ]\""
 
@@ -46,21 +33,239 @@ gnome_terminal_settings:
 
 # Git repositories to clone to /opt
 git_repos:
+  - name: PowerSploit
+    repo: https://github.com/PowerShellMafia/PowerSploit.git
+    version: dev
   - name: fuzzdb
     repo: https://github.com/fuzzdb-project/fuzzdb.git
   - name: Inveigh
     repo: https://github.com/Kevin-Robertson/Inveigh.git
   - name: PayloadsAllTheThings
-    repo: https://github.com/swisskyrepo/PayloadsAllTheThings
+    repo: https://github.com/swisskyrepo/PayloadsAllTheThings.git
   - name: Powermad
     repo: https://github.com/Kevin-Robertson/Powermad.git
-  - name: PowerSploit
-    repo: https://github.com/PowerShellMafia/PowerSploit.git
-    version: dev
   - name: quieter-firefox
     repo: https://bitbucket.org/mrbbking/quieter-firefox.git
   - name: SecLists
     repo: https://github.com/danielmiessler/SecLists.git
+  - name: JohnTheRipper
+    repo: https://github.com/magnumripper/JohnTheRipper.git
+  - name: Bashark
+    repo: https://github.com/TheSecondSun/Bashark.git
+  - name: ansible-playbook-kali
+    repo: https://github.com/iesplin/ansible-playbook-kali.git
+  - name: aquatone
+    repo: https://github.com/michenriksen/aquatone.git
+  - name: AutoBlue-MS17-010
+    repo: https://github.com/3ndG4me/AutoBlue-MS17-010.git
+  - name: AutoLocalPrivilegeEscalation
+    repo: https://github.com/ngalongc/AutoLocalPrivilegeEscalation.git
+  - name: AutoRecon
+    repo: https://github.com/AutoRecon/AutoRecon.git
+  - name: bhg
+    repo: https://github.com/NinjaStyle82/bhg.git
+  - name: Capcom-Rootkit
+    repo: https://github.com/FuzzySecurity/Capcom-Rootkit.git
+  - name: Chankro
+    repo: https://github.com/TarlogicSecurity/Chankro.git
+  - name: chisel
+    repo: https://github.com/jpillora/chisel.git
+  - name: ciscot7
+    repo: https://github.com/theevilbit/ciscot7.git
+  - name: CrackMapExec
+    repo: https://github.com/byt3bl33d3r/CrackMapExec.git
+  - name: CME-PowerShell-Scripts
+    repo: https://github.com/byt3bl33d3r/CME-PowerShell-Scripts.git
+  - name: Invoke-Obfuscation
+    repo: https://github.com/danielbohannon/Invoke-Obfuscation.git
+  - name: Invoke-Vnc
+    repo: https://github.com/artkond/Invoke-Vnc.git
+  - name: mimikittenz
+    repo: https://github.com/putterpanda/mimikittenz.git
+  - name: mimipenguin
+    repo: https://github.com/huntergregal/mimipenguin.git
+  - name: NetRipper
+    repo: https://github.com/NytroRST/NetRipper.git
+  - name: PowerSploit
+    repo: https://github.com/PowerShellMafia/PowerSploit.git
+  - name: RandomPS-Scripts
+    repo: https://github.com/xorrior/RandomPS-Scripts.git
+  - name: SessionGopher
+    repo: https://github.com/fireeye/SessionGopher.git
+  - name: impacket
+    repo: https://github.com/SecureAuthCorp/impacket.git
+  - name: pywerview
+    repo: https://github.com/the-useless-one/pywerview.git
+  - name: pywinrm
+    repo: https://github.com/diyan/pywinrm.git
+  - name: CrackMapExec
+    repo: https://github.com/byt3bl33d3r/CrackMapExec.git
+  - name: CME-PowerShell-Scripts
+    repo: https://github.com/byt3bl33d3r/CME-PowerShell-Scripts.git
+  - name: Invoke-Obfuscation
+    repo: https://github.com/danielbohannon/Invoke-Obfuscation.git
+  - name: Invoke-Vnc
+    repo: https://github.com/artkond/Invoke-Vnc.git
+  - name: mimikittenz
+    repo: https://github.com/putterpanda/mimikittenz.git
+  - name: mimipenguin
+    repo: https://github.com/huntergregal/mimipenguin.git
+  - name: NetRipper
+    repo: https://github.com/NytroRST/NetRipper.git
+  - name: PowerSploit
+    repo: https://github.com/PowerShellMafia/PowerSploit.git
+  - name: RandomPS-Scripts
+    repo: https://github.com/xorrior/RandomPS-Scripts.git
+  - name: SessionGopher
+    repo: https://github.com/fireeye/SessionGopher.git
+  - name: impacket
+    repo: https://github.com/SecureAuthCorp/impacket.git
+  - name: pywerview
+    repo: https://github.com/the-useless-one/pywerview.git
+  - name: pywinrm
+    repo: https://github.com/diyan/pywinrm.git
+  - name: dirsearch
+    repo: https://github.com/maurosoria/dirsearch.git
+  - name: droopescan
+    repo: https://github.com/droope/droopescan.git
+  - name: Ebowla
+    repo: https://github.com/Genetic-Malware/Ebowla.git
+  - name: Empire
+    repo: https://github.com/EmpireProject/Empire.git
+  - name: evilarc
+    repo: https://github.com/ptoomey3/evilarc.git
+  - name: Evil-WinRAR-Gen
+    repo: https://github.com/manulqwerty/Evil-WinRAR-Gen.git
+  - name: evil-winrm
+    repo: https://github.com/Hackplayers/evil-winrm.git
+  - name: firefox_decrypt
+    repo: https://github.com/unode/firefox_decrypt.git
+  - name: fuzzdb
+    repo: https://github.com/fuzzdb-project/fuzzdb.git
+  - name: FwdSh3ll
+    repo: https://github.com/snovvcrash/FwdSh3ll.git
+  - name: GCPBucketBrute
+    repo: https://github.com/RhinoSecurityLabs/GCPBucketBrute.git
+  - name: ghidra
+    repo: https://github.com/NationalSecurityAgency/ghidra.git
+  - name: gobuster
+    repo: https://github.com/OJ/gobuster.git
+  - name: GreatSCT
+    repo: https://github.com/GreatSCT/GreatSCT.git
+  - name: impacket
+    repo: https://github.com/CoreSecurity/impacket.git
+  - name: Inveigh
+    repo: https://github.com/Kevin-Robertson/Inveigh.git
+  - name: Invoke-Obfuscation
+    repo: https://github.com/danielbohannon/Invoke-Obfuscation.git
+  - name: JAWS
+    repo: https://github.com/411Hall/JAWS.git
+  - name: jdwp-shellifier
+    repo: https://github.com/IOActive/jdwp-shellifier.git
+  - name: juicy-potato
+    repo: https://github.com/ohpe/juicy-potato.git
+  - name: LaZagne
+    repo: https://github.com/AlessandroZ/LaZagne.git
+  - name: LFISuite
+    repo: https://github.com/D35m0nd142/LFISuite.git
+  - name: LinEnum
+    repo: https://github.com/rebootuser/LinEnum.git
+  - name: linux-exploit-suggester
+    repo: https://github.com/mzet-/linux-exploit-suggester.git
+  - name: linux-exploit-suggester-2
+    repo: https://github.com/jondonas/linux-exploit-suggester-2.git
+  - name: linuxprivchecker
+    repo: https://github.com/sleventyeleven/linuxprivchecker.git
+  - name: LNKUp
+    repo: https://github.com/Plazmaz/LNKUp.git
+  - name: lonelypotato
+    repo: https://github.com/decoder-it/lonelypotato.git
+  - name: merlin
+    repo: https://github.com/Ne0nd0g/merlin.git
+  - name: mitm6
+    repo: https://github.com/fox-it/mitm6.git
+  - name: natlas
+    repo: https://github.com/natlas/natlas.git
+  - name: nishang
+    repo: https://github.com/samratashok/nishang.git
+  - name: odat
+    repo: https://github.com/quentinhardy/odat.git
+  - name: odat.wiki
+    repo: https://github.com/quentinhardy/odat.wiki.git
+  - name: onetwopunch
+    repo: https://github.com/superkojiman/onetwopunch.git
+  - name: OSCP-2
+    repo: https://github.com/codingo/OSCP-2.git
+  - name: PayloadsAllTheThings
+    repo: https://github.com/swisskyrepo/PayloadsAllTheThings.git
+  - name: pentest
+    repo: https://github.com/jivoi/pentest.git
+  - name: Phantom-Evasion
+    repo: https://github.com/oddcod3/Phantom-Evasion.git
+  - name: Powerless
+    repo: https://github.com/M4ximuss/Powerless.git
+  - name: Powermad
+    repo: https://github.com/Kevin-Robertson/Powermad.git
+  - name: PowerShell-Suite
+    repo: https://github.com/FuzzySecurity/PowerShell-Suite.git
+  - name: PowerSploit
+    repo: https://github.com/PowerShellMafia/PowerSploit.git
+  - name: privilege-escalation-awesome-scripts-suite
+    repo: https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git
+  - name: pspy
+    repo: https://github.com/DominicBreuker/pspy.git
+  - name: radare2
+    repo: https://github.com/radare/radare2.git
+  - name: rdp-sec-check
+    repo: https://github.com/portcullislabs/rdp-sec-check.git
+  - name: Reconnoitre
+    repo: https://github.com/codingo/Reconnoitre.git
+  - name: RottenPotato
+    repo: https://github.com/foxglovesec/RottenPotato.git
+  - name: RottenPotatoNG
+    repo: https://github.com/breenmachine/RottenPotatoNG.git
+  - name: rsg
+    repo: https://github.com/mthbernardes/rsg.git
+  - name: Scrapy-YellowPages
+    repo: https://github.com/GoTrained/Scrapy-YellowPages.git
+  - name: SecLists
+    repo: https://github.com/danielmiessler/SecLists.git
+  - name: Sherlock
+    repo: https://github.com/rasta-mouse/Sherlock.git
+  - name: smbmap
+    repo: https://github.com/ShawnDEvans/smbmap.git
+  - name: sshuttle
+    repo: https://github.com/sshuttle/sshuttle.git
+  - name: static-binaries
+    repo: https://github.com/andrew-d/static-binaries.git
+  - name: SUDO_KILLER
+    repo: https://github.com/TH3xACE/SUDO_KILLER.git
+  - name: thc-ipv6
+    repo: https://github.com/vanhauser-thc/thc-ipv6.git
+  - name: ToolSuite
+    repo: https://github.com/codejanus/ToolSuite.git
+  - name: tplmap
+    repo: https://github.com/epinna/tplmap.git
+  - name: unicorn
+    repo: https://github.com/trustedsec/unicorn.git
+  - name: vim
+    repo: https://github.com/vim/vim.git
+  - name: Watson
+    repo: https://github.com/rasta-mouse/Watson.git
+  - name: webshell
+    repo: https://github.com/tennc/webshell.git
+  - name: WHP
+    repo: https://github.com/51x/WHP.git
+  - name: WindowsEnum
+    repo: https://github.com/absolomb/WindowsEnum.git
+  - name: Windows-Exploit-Suggester
+    repo: https://github.com/GDSSecurity/Windows-Exploit-Suggester.git
+  - name: windows-kernel-exploits
+    repo: https://github.com/SecWiki/windows-kernel-exploits.git
+  - name: windows-pentest
+    repo: https://github.com/ankh2054/windows-pentest.git
+  - name: yellowpages-scraper
+    repo: https://github.com/scrapehero/yellowpages-scraper.git
 
 # Packages for OS
 kali_os_packages:
@@ -96,6 +301,8 @@ kali_os_packages:
   - wireguard
   - xclip
   - xsel
+  - stoken
+  - tmux
 
 # Tool packages to install
 kali_tool_packages:
@@ -151,8 +358,6 @@ kali_tool_packages:
   - wpscan
   - xtightvncviewer
 
-kali_user: hacker
-
 misc_downloads:
   - url: https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
     dest: /opt/pspy/pspy64
@@ -160,16 +365,3 @@ misc_downloads:
   - url: https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64s
     dest: /opt/pspy/pspy64s
     mode: "0755"
-
-# Extensions for VS Code
-vscode_extensions:
-  # Language extensions
-  - ms-python.python
-  - ms-vscode.cpptools
-  - ms-vscode.powershell
-  - rebornix.ruby
-  # Markdown extensions
-  - yzhang.markdown-all-in-one
-  - telesoho.vscode-markdown-paste-image
-  # Utility extensions
-  - hookyqr.beautify
